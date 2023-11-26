@@ -1,0 +1,33 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "spacing": 7,
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "tray",
+        "clock",
+        "pulseaudio",
+        "cpu",
+        "memory"
+    ],
+    "margin": "5px",
+    "tray": {
+        "spacing": 15
+    },
+    "pulseaudio": {
+        "format": "Volume {volume}%",
+        "on-click": "pavucontrol"
+    },
+    "cpu": {
+        "interval": "1",
+        "format": "CPU {usage}%"
+    },
+    "memory": {
+        "format": "RAM {percentage}%"
+    },
+    "clock": {
+        "format": "{:<b>%H:%M</b>  %d.%m.%Y}"
+    }
+}
